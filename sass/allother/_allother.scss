@@ -1,0 +1,638 @@
+.slogan {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $header-bg;
+  text-align: center;
+  background-image: linear-gradient($header-overlay, $header-overlay),
+    url(../images/workin-day.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $light;
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.slogan-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px $box-shadow;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slogan-button:hover,
+.slogan-button:focus {
+  color: $btn-color;
+  background-color: $hover-color;
+}
+
+.slogan-button:active {
+  background-color: $color-active;
+  color: $btn-color;
+}
+
+/* slogan section end */
+
+/*?MERITS */
+
+/*!retical common functions*/
+
+.marits-list,
+.business-direction,
+.team-list,
+.clients-list,
+.portfolio-pointers {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+}
+
+.marits-list > .merits-item,
+.business-direction > .business-item,
+.team-list > .team-member,
+.clients-list > .clients-item,
+.portfolio-pointers > .portfolio-point {
+  margin-left: #{$card-set-gap};
+  margin-top: #{$card-set-gap};
+}
+/*!retical common functions end*/
+
+/*! reticle marits*/
+
+.marits-list > .merits-item {
+  flex-basis: calc(100% / 4 - #{$card-set-gap});
+}
+
+/*! reticle marits end */
+
+.marits-trait {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.marits-info {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $paragraph-color;
+  max-width: 270px;
+}
+
+/*TODO icons-svg marits section*/
+
+.marits-icon-thumb {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $icon-marits-color;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.marits-icon {
+  height: 70px;
+}
+
+/*TODO icons-svg marits section end*/
+
+/* marits section end */
+
+/*?BUSINESS */
+
+.business {
+  padding-top: 0;
+}
+
+/*! reticle business*/
+
+.business-direction > .business-item {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+}
+
+/*! reticle business end */
+
+.business-title,
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.business-thumb {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.business-card-name {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: $busuness-card-name-bg;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-card-title {
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $busines-card-title-color;
+}
+
+/* business section end */
+
+/*? TEAM */
+
+/*! reticle team*/
+
+.team-list > .team-member {
+  flex-basis: calc(100% / 4 - #{$card-set-gap});
+}
+/*! reticle team end */
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $paragraph-color;
+}
+
+.team-member {
+  background-color: $team-member-bg;
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+
+.team {
+  background-color: $btn-bg-color;
+}
+
+/* TODO team svg icon */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: $icon-team-color;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: $icon-team-fill-hover;
+  background-color: $primary-color;
+}
+
+/* TODO team svg icon end */
+
+/* ==ROTATE==== */
+.team-rotate-container {
+  position: relative;
+  background-color: rgba(191, 126, 33, 0.5);
+}
+
+.team-rotate-card {
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.team-rotate-card:hover,
+.team-rotate-card:focus {
+  transform: rotateY(180deg);
+}
+
+.team-rotate-card .team-member-thumb {
+  backface-visibility: hidden;
+}
+
+.team-rotate-card .team-back {
+  transform: rotateY(180deg);
+}
+
+.team-back {
+  position: absolute;
+  top: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.team-back-title {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team-back-title-span {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+}
+/* ==ROTATE end==== */
+
+/* team section end*/
+
+/*? Clients section */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-item {
+  height: 90px;
+}
+
+/*! clients retical*/
+.clients-list > .clients-item {
+  flex-basis: calc(100% / 6 - #{$card-set-gap});
+}
+/*! clients retical end*/
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid $clients-color-icon;
+  border-radius: 4px;
+  fill: $clients-color-icon;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid $primary-color;
+  fill: $primary-color;
+}
+
+/* ============== */
+
+.yaco-icon {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.here-icon {
+  width: 40px;
+  height: 52px;
+}
+
+.leaf-icon {
+  width: 41px;
+  height: 42.6px;
+}
+
+.foster-icon {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.brand-icon {
+  width: 59px;
+  height: 47px;
+}
+
+.tagline-icon {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+/* ================= */
+
+/*? Clients section end */
+
+/*?PORTFOLIO */
+
+.portfolio-list-button {
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  background-color: $btn-bg-color;
+  color: $main-color;
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: $btn-color;
+  background-color: $primary-color;
+  box-shadow: $btn-portfolio-shadow;
+}
+
+.portfolio-description:hover,
+.portfolio-name:hover {
+  color: $primary-color;
+}
+
+/*! reticle portfolio*/
+
+.portfolio-pointers > .portfolio-point {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+}
+
+.portfolio-point {
+  background-color: $btn-color;
+}
+
+.portfolio-point:hover,
+.portfolio-point:focus {
+  box-shadow: $portfolio-card-shadow;
+}
+
+.portfolio-info {
+  padding: 20px 24px;
+  border: 1px solid $card-border-color;
+}
+
+.portfolio-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $paragraph-color;
+}
+
+/*! reticle portfolio end */
+/* overlay */
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition-property: transform;
+  transform: translateY(101%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-text-overlay {
+  font-size: 18px;
+  max-width: 340px;
+  padding-left: 24px;
+  line-height: 1.56;
+  color: $portfolio-text-overlay;
+}
+
+.portfolio-point:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+/* overlay end */
+
+/* portfolio-pointers end */
+
+/*?FOOTER */
+
+.wrap-footer-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.wrap-footer-item {
+  display: block;
+  margin-right: 30px;
+  /* flex-basis: calc((50% - 45px) / 3); */
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $background-slogan;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-list-item {
+  margin-top: 9px;
+}
+
+.wrap-footer-item:nth-child(3) {
+//   flex-basis: (50% - (#{$15px}));
+  margin-right: 0;
+}
+
+.footer-form-title {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $light;
+}
+
+.footer-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-form-input {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $background-slogan;
+  border-radius: 4px;
+  padding: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+}
+
+.footer-form-submit {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 28px 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  background-color: $primary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+  color: $light;
+  background-color: $hover-color;
+}
+
+.social-icon-footer {
+  margin-left: 10px;
+  fill: $light;
+}
+
+/* ==================== */
+
+.logoF {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.address {
+  font-style: inherit;
+  color: $btn-color;
+}
+
+.link-footer {
+  display: inline-block;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $color-zsix;
+  padding: 0;
+}
+
+.linkA {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: $primary-color;
+}
+
+/* ================ */
+
+.social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-title-color;
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  justify-content: flex-start;
+}
+
+.fi-social {
+  fill: $footer-social-color;
+}
+
+.fi-social-link {
+  background-color: $footer-social-color-bg;
+}

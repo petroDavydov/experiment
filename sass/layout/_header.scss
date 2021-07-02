@@ -1,0 +1,140 @@
+/*?HEADER */
+
+.header {
+	border-bottom: 1px solid #ececec;
+  }
+  
+  .main-navigation {
+	display: flex;
+	align-items: center;
+  }
+  
+  .navigation {
+	display: flex;
+  }
+  
+  .logo {
+	padding-top: 26px;
+	padding-bottom: 23px;
+  }
+  
+  .menu {
+	display: flex;
+	margin-left: 108px;
+  }
+  
+  .menu .menu-item:not(:last-child) {
+	margin-right: 50px;
+  }
+  
+  .menu-link.current::after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	background-color: var(--primary-color);
+  
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+  }
+  
+  .menu-link,
+  .linkA,
+  .linkM,
+  .linkT {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 0;
+	padding-right: 0;
+  
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* TODO sprite for connect */
+  
+  .connect-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	fill: var(--icon-heder-color);
+	color: var(--color-link);
+	font-weight: 500;
+  
+	transition-property: fill, color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .connect-link:hover,
+  .connect-link:focus {
+	fill: var(--primary-color);
+	color: var(--primary-color);
+  }
+  
+  .envelope-icon {
+	width: 16px;
+	height: 12px;
+  }
+  
+  .smartphone-icon {
+	width: 10px;
+	height: 16px;
+  }
+  
+  .connect-icon {
+	margin-right: 10px;
+	margin-bottom: 0;
+  }
+  
+  /* TODO sprite for connect end*/
+  
+  .connect {
+	display: flex;
+	margin-left: auto;
+  }
+  
+  .connect .connect-item + .connect-item {
+	margin-left: 50px;
+  }
+  
+  /* LOGO */
+  .logo,
+  .logo:hover,
+  .logo:focus {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+  }
+  
+  .logo-web {
+	color: var(--primary-color);
+  }
+  
+  .logoF,
+  .logoF:hover,
+  .logoF:focus {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--btn-color);
+  }
+  
+  .menu-link:hover,
+  .menu-link:focus {
+	color: var(--primary-color);
+  }
+  
+  /*?HEADER END*/
